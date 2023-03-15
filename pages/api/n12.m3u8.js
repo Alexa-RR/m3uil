@@ -28,6 +28,6 @@ export default async function handler(req, res) {
     const parse = HLS.parse(stream)
     res.status(301)
     //res.json(parse.variants[5].uri)
-    res.redirect(`https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12/${parse.variants[5].uri}&?b-in-range=800-2700`)
+    res.redirect(`https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12/${parse.variants[5].uri}`)
     //res.redirect(`https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12/index.m3u8?b-in-range=4600-4700&${ticket.tickets[0].ticket}`)
   }
